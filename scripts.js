@@ -12,6 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.querySelectorAll('[data-toggle="collapse"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = document.querySelector(btn.dataset.target);
+      if (target) target.classList.toggle('show');
+    });
+  });
+
   document.querySelectorAll('.modal .close').forEach(btn => {
     btn.addEventListener('click', () => {
       btn.closest('.modal').classList.remove('open');

@@ -38,6 +38,18 @@
     </div>
   </section>
 
+  <section class="container-fluid">
+    <h2>Fluid Container</h2>
+    <div class="row">
+      <div class="col-6">
+        <div class="card">Fluid .col-6</div>
+      </div>
+      <div class="col-6">
+        <div class="card">Fluid .col-6</div>
+      </div>
+    </div>
+  </section>
+
   <section class="container">
     <h2>Buttons</h2>
     <a href="#" class="btn">Primary</a>
@@ -45,8 +57,21 @@
   </section>
 
   <section class="container">
+    <h2>Cards</h2>
+    <div class="card shadow">
+      <div class="card-header">Card Header</div>
+      <div class="card-body">
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="card-footer text-right">
+        <button class="btn btn-outline-primary">Action</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
     <h2>Table</h2>
-    <table class="table">
+    <table class="table table-striped">
       <thead>
         <tr>
           <th>#</th>
@@ -74,15 +99,15 @@
     <form>
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter name">
+        <input type="text" id="name" class="form-control" placeholder="Enter name">
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter email">
+        <input type="email" id="email" class="form-control" placeholder="Enter email">
       </div>
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea id="message" rows="4" placeholder="Enter message"></textarea>
+        <textarea id="message" class="form-control" rows="4" placeholder="Enter message"></textarea>
       </div>
       <button class="btn" type="submit">Submit</button>
     </form>
@@ -133,11 +158,42 @@
   </section>
 
   <section class="container">
+    <h2>Accordion</h2>
+    <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#item1">Toggle Item 1</button>
+        </div>
+        <div id="item1" class="collapse">
+          <div class="card-body">Accordion body 1</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#item2">Toggle Item 2</button>
+        </div>
+        <div id="item2" class="collapse">
+          <div class="card-body">Accordion body 2</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
     <h2>Progress &amp; Spinner</h2>
     <div class="progress mb-2">
       <div class="progress-bar" style="width: 60%"></div>
     </div>
     <div class="spinner"></div>
+  </section>
+
+  <section class="container">
+    <h2>Pagination</h2>
+    <ul class="pagination">
+      <li class="page-item"><a href="#" class="page-link">1</a></li>
+      <li class="page-item active"><a href="#" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" class="page-link">3</a></li>
+    </ul>
   </section>
 
   <section class="container">
