@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom UI Framework Demo</title>
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">HectaUI</a>
+    <a href="#">Home</a>
+    <a href="#">Docs</a>
+    <a href="#">About</a>
+  </nav>
+
+  <header class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Welcome to HectaUI</h1>
+        <p>Modern responsive CSS framework inspired by Bootstrap and Tailwind.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>Grid System</h2>
+    <div class="row">
+      <div class="col-4">
+        <div class="card">.col-4</div>
+      </div>
+      <div class="col-4">
+        <div class="card">.col-4</div>
+      </div>
+      <div class="col-4">
+        <div class="card">.col-4</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid">
+    <h2>Fluid Container</h2>
+    <div class="row">
+      <div class="col-6">
+        <div class="card">Fluid .col-6</div>
+      </div>
+      <div class="col-6">
+        <div class="card">Fluid .col-6</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Buttons</h2>
+    <a href="#" class="btn">Primary</a>
+    <button class="btn btn-secondary">Secondary</button>
+  </section>
+
+  <section class="container">
+    <h2>Cards</h2>
+    <div class="card shadow">
+      <div class="card-header">Card Header</div>
+      <div class="card-body">
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="card-footer text-right">
+        <button class="btn btn-outline-primary">Action</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Table</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alice</td>
+          <td>alice@example.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bob</td>
+          <td>bob@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="container">
+    <h2>Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" class="form-control" rows="4" placeholder="Enter message"></textarea>
+      </div>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section class="container">
+    <h2>Alerts</h2>
+    <div class="alert alert-success">Success alert</div>
+    <div class="alert alert-danger">Danger alert</div>
+  </section>
+
+  <section class="container">
+    <h2>Badges &amp; Breadcrumbs</h2>
+    <span class="badge">New</span>
+    <ul class="breadcrumb mt-2">
+      <li>Home</li>
+      <li>Library</li>
+      <li>Data</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Dropdown</h2>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle">Menu</button>
+      <div class="dropdown-menu">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Nav Tabs</h2>
+    <ul class="nav nav-tabs">
+      <li><a href="#" class="nav-link active">Tab 1</a></li>
+      <li><a href="#" class="nav-link">Tab 2</a></li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>List Group</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Item 1</li>
+      <li class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Accordion</h2>
+    <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#item1">Toggle Item 1</button>
+        </div>
+        <div id="item1" class="collapse">
+          <div class="card-body">Accordion body 1</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#item2">Toggle Item 2</button>
+        </div>
+        <div id="item2" class="collapse">
+          <div class="card-body">Accordion body 2</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Progress &amp; Spinner</h2>
+    <div class="progress mb-2">
+      <div class="progress-bar" style="width: 60%"></div>
+    </div>
+    <div class="spinner"></div>
+  </section>
+
+  <section class="container">
+    <h2>Pagination</h2>
+    <ul class="pagination">
+      <li class="page-item"><a href="#" class="page-link">1</a></li>
+      <li class="page-item active"><a href="#" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" class="page-link">3</a></li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Modal &amp; Toast</h2>
+    <button class="btn" data-toggle="modal" data-target="#demoModal">Open Modal</button>
+    <div id="demoModal" class="modal">
+      <div class="modal-content">
+        <button class="close">&times;</button>
+        <p>Modal content</p>
+      </div>
+    </div>
+    <div class="toast" id="demoToast">Hello from toast!</div>
+  </section>
+
+  <footer>
+    <div class="container">
+      &copy; 2023 HectaUI
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toast = document.getElementById('demoToast');
+      if (toast) setTimeout(() => toast.classList.add('show'), 1000);
+    });
+  </script>
+</body>
+</html>
